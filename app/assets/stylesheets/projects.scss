@@ -1,0 +1,64 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin parallax { 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+html, body {
+  height: 100%; 
+  width: 100%;
+}
+
+/* vertical-centered image */
+.center-image {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#home {
+
+  background: url('https://dl.dropboxusercontent.com/u/50943129/codepen/10_Extra%20Photo%202.jpg') no-repeat center center fixed;
+  background-position: 0px 0px;
+  @include parallax;
+}
+
+#gigs {
+  background: url('https://dl.dropboxusercontent.com/u/50943129/SAN-FRAN-BLACK-AND-WHITE.jpg') no-repeat center center fixed;
+  @include parallax;
+  height: 800px; /* overwrites the default parallax height */
+}
+
+#discography-layover {
+  background: url('https://dl.dropboxusercontent.com/u/50943129/codepen/Arctic-Monkeys-2009-Humbug-Shot-Wallpaper-679x452.jpg') no-repeat center center fixed; 
+  @include parallax;
+  height: 400px;
+}
+
+
+/* Custom styles */
+h1, h2, h3, .navbar {
+  font-family: 'Montserrat', sans-serif;
+}
+#discography {
+  background-color: #333;
+  color: #ffffff;
+}
+#discography .featurette-divider {
+  color: #fff;
+}
+#gigs .panel {
+  opacity: 0.8;
+}
+.pad-md {
+  padding: 50px 0;
+}
+#gigs h2 {
+  color: #fff;
+}
