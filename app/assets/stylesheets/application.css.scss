@@ -185,6 +185,7 @@ header .header-content .header-content-inner p {
   display: block;
   max-width: 650px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -389,13 +390,3 @@ body {
   }
 }
 
-#picture-footer {
-  position: absolute;
-  z-index: -99;
-  /*background: url("cartel.jpg")no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: bottom;*/
-}
