@@ -63,7 +63,12 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #F05F40;
+  background: url('charlas/baul.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
 }
 .bg-dark {
   background-color: #222222;
@@ -91,7 +96,7 @@ header {
     rgba(0, 0, 0, 0.50), 
     rgba(0, 0, 0, 0.50)
     ),
-  url("graduacion/img628.jpg")no-repeat center center fixed;
+  url("graduacion/IMG_3530.JPG")no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -166,7 +171,15 @@ header .header-content .header-content-inner p {
 }
 .service-box p {
   margin-bottom: 0;
+  color: #F05F40;
+  font-weight: 800;
 }
+
+.service-box h1 {
+  font-weight: 800;
+  color: white;
+}
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -374,4 +387,15 @@ body {
   video {
     display:none;
   }
+}
+
+#picture-footer {
+  position: absolute;
+  z-index: -99;
+  /*background: url("cartel.jpg")no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: bottom;*/
 }
