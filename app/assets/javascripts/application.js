@@ -16,8 +16,11 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).on('ready page:load', function () {
+  // you code here
 
-$('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open');
+  $('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
 });
