@@ -9,6 +9,8 @@ class WelcomesController < ApplicationController
   end
 
   def futureprojects
-    
+  end
+
+  def contact
   end
 end
