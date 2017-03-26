@@ -5,7 +5,7 @@
         <h1 id="homeHeading">Fundacion Jacinto Vasquez</h1>
             <hr>
             <p>Organizacion sin fines de lucro centrada en combatir la pobreza y delincuencia educando y preparando jovenes para el futuro totalmente gratis</p>
-            <a href="#about" class="btn btn-primary btn-xl">Find Out More</a>
+            <%= link_to 'Nuestros Projectos', welcomes_futureprojects_path, class: 'btn btn-primary btn-xl' %>
         </div>
     </div>
 </header>
@@ -17,7 +17,7 @@
                 <h2 class="section-heading">Al servicio de nuestra comunidad</h2>
                 <hr class="light">
                 <p class="text-faded">La formula para eliminar pobreza y delincuencia no esta en mas policias o mas carceles sino en educando a jovenes para el futuro como dice el refran <mark class="">Ensena al hombre a pescar y comera toda la vida</mark></p>
-                <a href="#services" class="btn btn-default btn-xl sr-button">Get Started!</a>
+                <%= link_to 'Conferencias', welcomes_conferences_path, class: 'btn btn-primary btn-xl' %>
             </div>
         </div>
     </div>
@@ -71,12 +71,22 @@
     </div>
 </section>
 
-<section class="no-padding" id="portfolio">
+<aside class="bg-dark" style="margin-bottom: -10rem;">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Visita nuestra area de graduaciones</h2>
+            <%= link_to 'Pulsa aqui', welcomes_graduations_path, class: 'btn btn-primary btn-xl' %>
+        </div>
+    </div>
+</aside>
+
+
+<section  id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                    <img src="assets/reparticion/ninarubia.jpg" max-width="100%" height="100%" class="img-responsive" alt="">
+                <a href='https://jacinto.herokuapp.com/charityevents' class="portfolio-box">
+                    <%= image_tag('reparticion/ninarubia.jpg', width:'100%', height:'350') %>
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -90,23 +100,23 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                    <img src="assets/charlas/entregamuchos.jpg" width="100%" height="325"alt="">
+                <a  href="https://jacinto.herokuapp.com/conferences" class="portfolio-box">
+                    <img src="assets/charlas/entregamuchos.jpg" width="100%" height="350"alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
                                 Categoria
                             </div>
                             <div class="project-name">
-                                Entrega de Libros
+                                Entrega de libros
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                    <img src="assets/reparticion/refresco.jpg" max-width="100%" height="100%" class="img-responsive" alt="">
+                <a href="https://jacinto.herokuapp.com/charityevents" class="portfolio-box">
+                    <img src="assets/reparticion/refresco.jpg" max-width="100%" height="350" class="" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -120,8 +130,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                    <img src="assets/graduacion/IMG_3529.JPG" max-width="100%" height="100%" class="img-responsive" alt="">
+                <a href="https://jacinto.herokuapp.com/graduations" class="portfolio-box">
+                    <img src="assets/graduacion/IMG_3529.JPG" max-width="100%" height="350" class="" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -135,8 +145,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                    <img src="assets/graduacion/IMG_3451.jpg" max-width="100%" height="100%" class="img-responsive" alt="">
+                <a href="https://jacinto.herokuapp.com/graduations" class="portfolio-box">
+                    <img src="assets/graduacion/IMG_3451.jpg" max-width="100%" height="350" class="" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -150,8 +160,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                    <img src="assets/generales/alfabetizacion2.jpg" width="100%" height="318"  alt="">
+                <a href="https://jacinto.herokuapp.com/futureprojects" class="portfolio-box">
+                    <img src="assets/generales/alfabetizacion2.jpg" width="100%" height="350"  alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -168,11 +178,11 @@
     </div>
 </section>
 
-<aside class="bg-dark">
+<aside class="bg-dark" style="margin-top: -10rem;">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2>Visita nuestros projectos technologicos</h2>
-            <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Pulsa aqui</a>
+            <h2>Visita nuestra area de Donaciones y reparticiones caritativas</h2>
+            <%= link_to 'Pulsa aqui', welcomes_charityevents_path, class: 'btn btn-primary btn-xl' %>
         </div>
     </div>
 </aside>
@@ -184,17 +194,21 @@
             <img src="assets/cartel.jpg" width="100%" height="600">
             </div> -->
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Contacto</h2>
+                <h2 class="section-heading"><%= link_to 'Contacto', welcomes_contact_path(anchor: 'contact') %></h2>
                 <hr class="primary">
                 <p>Contactanos ahora mismo para que planifiquemos como nos puedes ayudar a realizar los projectos de ayuda y solidadirdad</p>
             </div>
             <div class="col-lg-4 col-lg-offset-2 text-center">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>123-456-6789</p>
+                <p>809 303 4794</p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <p><a href="mailto:jacintovasquez05@hotmail.com">jacintovasquez05@hotmail.com</a></p>
+            </div>
+
+            <div class="text-center">
+                <%= link_to 'Mas informacion', welcomes_contact_path(anchor: 'contact'), class: 'btn btn-primary btn-xl' %>
             </div>
         </div>
     </div>

@@ -23,13 +23,15 @@
 
 #about .about-left {
   position: relative;
-    z-index: 2;
+  z-index: 2;
+  margin-left: -5rem;
+  padding-top: 2rem;
 }
 
 #about .about-right:before {
   content: "";
     border: 8px solid #e5eef0;
-  width: 120%;
+  width: 110%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -526,4 +528,10 @@
   .services-style-one .content-column .content-box {
     padding: 200px 20px 100px 20px; 
   }
+}
+
+.pelucas {
+  max-width: 80px !important;
+  height: 100% !important;
+  display: none 
 }

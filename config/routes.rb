@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   get 'welcomes/graduations'
   get 'welcomes/futureprojects'
   get 'welcomes/contact'
-
-  get :about, controller:"application"
+  get 'welcomes/charityevents'
 
   resources :projects
 end

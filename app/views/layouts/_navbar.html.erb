@@ -1,5 +1,5 @@
 <div class="logo pepe">
-  <a href="#" src="http://www.google.com"><%=image_tag("logo.jpg", class:"img-responsive img-circle pepe pull-left") %></a>
+   <%= link_to image_tag("logo.jpg", class:"img-responsive img-circle pepe pull-left"), root_path %>
 </div>
 <div class="button_container" id="toggle">
   <span class="top"></span>
@@ -10,10 +10,12 @@
 <div class="overlay" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li ><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca De Nosotros</a></li>
-      <li><a href="#">Projectos</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><%= link_to 'Inicio', root_path %></li>
+      <li><%= link_to 'Acerca De Nosotros', welcomes_contact_path(anchor: 'fundacion-contacto') %></li>
+      <li><%= link_to 'Projectos', welcomes_futureprojects_path %> </li>
+      <li><%= link_to 'Contacto', welcomes_contact_path(anchor: 'contact') %></li>
     </ul>
   </nav>
 </div>
+
+
