@@ -1,5 +1,5 @@
 <!--service-->
-<div id="service">
+<div id="service"  id="fundacion-contacto">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6 col-md-offset-3">
@@ -21,48 +21,48 @@
                   
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-                            <h4>Quienes somos</h4>
+                          <div class="icon-box"><i class="fa fa-child fa-lg" aria-hidden="true"></i></div>
+                            <h3>Quienes somos</h3>
                             <div class="text">Una asociacion sin fines del lucro que trabajamos a favor de los mas necesitados.</div>
                         </div>
                     </div>
                     
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
-                            <h4>Trajectoria</h4>
+                          <div class="icon-box"><i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i></div>
+                            <h3>Trajectoria</h3>
                             <div class="text">Tenemos mas de 20 anos trabajando iniciando como fundacion madres solteras y ninos abandonados. En el 2011 reformulamos el nombre para pasar a Asociaciacion Jacinto Vasquez</div>
                         </div>
                     </div>
                     
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-trophy" aria-hidden="true"></i></div>
-                            <h4>Nuestra Mission</h4>
+                          <div class="icon-box"><i class="fa fa-trophy fa-lg" aria-hidden="true"></i></div>
+                            <h3>Nuestra Mission</h3>
                             <div class="text">Es capacitar jovenes de escasos recursos en el area tecnologica para su insertacion laboral o formacion microempresarial</div>
                         </div>
                     </div>
                     
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
-                            <h4>Siguiendo nuestra meta</h4>
+                          <div class="icon-box"><i class="fa fa-line-chart fa-lg" aria-hidden="true"></i></div>
+                            <h3>Siguiendo nuestra meta</h3>
                             <div class="text">Luego de graduar mas de 600 jovenes avanzando en nuestra mision de capacitar y dotar a jovenes en distintas areas tecnologicas</div>
                         </div>
                     </div>
                     
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-                            <h4>Nuestros Valores</h4>
+                          <div class="icon-box"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i></div>
+                            <h3>Nuestros Valores</h3>
                             <div class="text">Estamos profundamente preocupados por los valores humanos que se pierden y queremos preservarlos a travez de los buenos ejemplos y las obras sociales </div>
                         </div>
                     </div>
                     
                     <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
                       <div class="inner-box">
-                          <div class="icon-box"><i class="fa fa-money" aria-hidden="true"></i></div>
-                            <h4>Trasmision de los valores</h4>
+                          <div class="icon-box"><i class="fa fa-leaf fa-lg" aria-hidden="true"></i></div>
+                            <h3>Trasmision de los valores</h3>
                             <div class="text">Incentivando y cultivando los buenos valores y las buenas acciones para cosechar un futuro mejor  </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     </div>
                     
                     
-                    <button class="btn">Graduados</button>
+                    <%= link_to 'Graduados', welcomes_graduations_path, class: 'btn btn-default' %>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
 
 
   <!--service gapping-->
-  <div class="service-footer hidden-xs">
+  <div class="service-footer hidden-xs no-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-7">
@@ -121,7 +121,7 @@
     <!--about-->
     <div id="about">
 
-      <div class="container">
+      <div class="container" id="contact">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
           <div class="about-heading">
@@ -139,7 +139,7 @@
           <div class="col-xs-12 hidden-sm col-md-5">
 
             <div class="about-left">
-              <img src="images/about/about1.jpg" alt="">
+              <%=  image_tag('graduacion/IMG_3458.JPG', class:'', width:'459', height:'500')%>
             </div>
 
           </div>

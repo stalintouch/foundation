@@ -1,0 +1,124 @@
+
+
+
+<!-- NAVBAR
+================================================== -->
+  
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner " role="listbox">
+        <div class="item active ">
+          <%= image_tag('reparticion/refresco.jpg', class:'pelucas') %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Fundacion Jacinto Vasquez</h1>
+              <p>Los ninos son el futuro del mundo, Apoyandolos tendremos mejor Mañana</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestros projectos</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag('reparticion/altagracia.jpg', class:'img-responsive') %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Dar es lo que abre la puerta para recibir.</h1>
+              <p>La felicidad no consiste en poseer sino en dar y yo me siento feliz cuando puedo brindar a mi hermano una ayuda solidaria. <span><i>---Jacinto Vasquez</i></span></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestras graduaciones</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag('reparticion/rigoutiles.jpg', class:'img-responsive') %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Y vino una viuda pobre y echó dos blancas, que son un cuadrante.</h2>
+              <p>Entonces, llamando a sus discípulos, les dijo: De cierto os digo que esta viuda pobre echó más que todos los que han echado al arca, porque todos han echado de lo que les sobra; pero esta, de su pobreza echó todo lo que tenía, todo su sustento. <span><i>Marcos 12:41–44</i></span></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestra area de Conferencias</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    
+    <div class="container marketing">
+
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <%= image_tag('reparticion/chubby.jpg', class:'img-responsive') %>
+          <h2>Somos</h2>
+          <p>Una institucion sin fines de lucro que ademas de capacitar donamos a personas de escasos recursos <mark>jugetes</mark> <mark>comida</mark> <mark>utiles escolares</mark><mark>libros</mark> de nuestros recursos financieros</p>
+          <%= link_to 'Quienes Somos &raquo;'.html_safe, welcomes_contact_path, class:'btn btn-default' %>
+        </div>
+        <div class="col-lg-4">
+          <%= image_tag('reparticion/pelotas.jpg', class:'img-responsive') %>
+          <h2>Mas que</h2>
+          <p>Una institucion sin fines de lucro de capacitacion y formacion nos dedicamos a brindarle alegria y diversion a ninos de escasos recursos llevandole un jugete, una merienda y utiles escolares.</p>
+          <%= link_to 'Contactanos &raquo;'.html_safe, welcomes_contact_path(anchor: 'contact'), class:'btn btn-default' %>
+        </div>
+        <div class="col-lg-4">
+          <%= image_tag('reparticion/mascotas.jpg', class:'img-responsive') %>
+          <h2>Educacion</h2>
+          <p>Para repartir y llevar alegria y aliento con toda honestidad y sinceridad, sin politica ni corrupcion. Es un acto humanitario por amor al necesitado y desinteresado.</p>
+          <%= link_to 'Cursos &raquo;'.html_safe, welcomes_contact_path, class:'btn btn-default' %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Reparticion de juegetes <span class="text-muted">llevandole alegria a los ninos.</span></h2><br>
+          <p class="lead">Hasta la fecha hemos repartido alrededor de 40,000 jugetes a ninos de escasos recursos para alegrarles la vida y brindarles un momento de gozo.</p>
+          <p>Entre pelotas, munecas, ajedrez, ping pong, pistolitas de agua, juegos de cocina ect, se le ha brindado el gozo de tener un jugete con que jugar</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag('reparticion/utiles.jpg', class:'featurette-image img-responsive center-block') %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Utiles escolares <span class="text-muted">Estudiando asegura un futuro brillante</span></h2><br>
+          <p class="lead">Como fundacion no solo nos interesa la alegria del nino sino que nos enfocamos en que el nino tenga los adecuados materiales educativos para poder asistir a la escuela. Ya que trabajamos con ninos de escasos recursos y en muchas ocaciones no cuentan con los utiles escolares basicos para el desarrollo educativo, nosotros estamos ahi para ayudarle en su trajecto</p>
+          <p>Mascotas, lapiz, mochilas, borras, nacho, libros de dibujo, lapices de colores etc</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <%= image_tag('reparticion/altagracia.jpg', class:'featurette-image img-responsive center-block') %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Reparticion de libros educacionales. <span class="text-muted">Para la temprana orientacion y formacion.</span></h2><br>
+          <p class="lead">La asociacion Jacinto Vasquez tambien ha distribuido miles de libros con la finalidad de que el joven adquiera el habito de leer y expandir sus conocimientos con el proposito de una formacion integral</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag('charlas/entregamuchos.jpg', class:'featurette-image img-responsive center-block') %>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+     

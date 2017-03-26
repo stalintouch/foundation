@@ -13,4 +13,7 @@ class WelcomesController < ApplicationController
 
   def contact
   end
+
+  def charityevents
+  end
 end
