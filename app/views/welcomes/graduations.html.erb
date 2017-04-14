@@ -13,14 +13,13 @@
 <div id="members" class="pad-md">
   <div class="container">
     <div class="row">
-      <h1 id="categorias-h1">Nuestro Objectivo</h1>
     </div>
     <div class="row">
       <div class="col-lg-3">
         <i class="fa fa-5x fa-handshake-o text-primary sr-icons"></i>
         <h3 class="text-primary">Cursos</h3>
         <p>Hemos impartido una gran variedad de cursos basicos tales como: Etiqueta y protocolo, panaderia y reposteria hasta cursos tecnicos como ensamblaje de inversores, farmacia etc...</p>
-        <p><a class="btn btn-default" href="#" role="button">Read more »</a></p>
+        <%= link_to 'Enterate', welcomes_futureprojects_path, class: 'btn btn-primary' %>
       </div>
       <div class="col-lg-3">
         <i class="fa fa-5x fa-plus-square text-primary sr-icons"></i>
@@ -31,14 +30,13 @@
       <div class="col-lg-3">
         <i class="fa fa-5x fa-graduation-cap text-primary sr-icons"></i>
         <h3 class="text-primary">Cursos para el futuro</h3>
-        <p>Tenemos en projecto capacitar jovenes en nuevas areas (10+) <mark>Reparacion de Electrodomesticos</mark>, <mark>Reparacion de Computadoras</mark>, <mark>Ingles</mark>, <mark>Secretaria Ejecutiva</mark> <mark>Barberia</mark> <mark>Redes y Computadora</mark> </p>
-        <p><a class="btn btn-default" href="#" role="button">Read more »</a></p>
+        <p>Tenemos en projecto capacitar jovenes en nuevas areas (10+) <mark>Reparacion de Electrodomesticos</mark>, <mark>Reparacion de Computadoras</mark>, <mark>Ingles</mark>, <mark>Secretaria Ejecutiva</mark>, <mark>Barberia</mark>, <mark>Redes y Computadora</mark> </p>
+        <%= link_to 'Enterate', welcomes_futureprojects_path, class: 'btn btn-primary' %>
       </div>
       <div class="col-lg-3">
         <i class="fa fa-5x fa-plane text-primary sr-icons"></i>
         <h3 class="text-primary">Parte Humana</h3>
-        <p>Estos graduados son productdel sacrificio economico personal, impulsado por el deseo de exterder una mano amiga al necesitado</p>
-        <p><a class="btn btn-default" href="#" role="button">Read more »</a></p>
+        <p>Estos graduados son producto del sacrificio economico de la <span style="font-size:30px; background:pink" >Familia Vasquez</span></p>
       </div>
     </div>
   </div>
@@ -54,8 +52,8 @@
         <h3 class="featurette-heading text-primary">Excelencia y calidad en la capacitacion</h3>
         <br>
         <br>
-        <p class="lead">El curso de <mark>Inversores</mark> fue ideado con el fin de dotar a cada joven del conocimiento necesario para construir, reparar, instalar, dar servicio y mantenimiento a los circuitos y componenentes que conforman un inversor.  No solo se capacito en el area tecnica sino en el area humana-administrativa para formar un micro-empresario.</p>
-        <p>El curso consto con prefesores altamente capacitados egresados de Infotep, cada uno con experiencia profecional y amplia capacidad para la ensenanza</p>
+        <p class="lead">El curso de <mark>Inversores</mark> fue ideado con el fin de dotar a cada joven del conocimiento necesario para construir, reparar, instalar, dar servicio y mantenimiento a los circuitos y componentes que conforman un inversor.  No solo se capacita en el area tecnica sino en el area humana-administrativa para formar un micro-empresario.</p>
+        <p>El curso consto con profesores altamente capacitados egresados de Infotep, cada uno con experiencia profesional y amplia capacidad para la enseñanza.</p>
       </div>
       <div class="col-md-4">
         <div class="embed-responsive embed-responsive-4by3">
@@ -65,14 +63,14 @@
     </div>
     <hr class="featurette-divider">
     <div class="row featurette">
-      <div class="col-md-8 col-md-push-3">
+      <div class="col-md-8 col-md-push-4">
         <h2 class="featurette-heading">Graduacion curso de belleza y uñas acrilicas</h2>
         <br>
         <h3 class="featurette-heading text-primary">Garantia de desarrollo profesional y laboral</h3>
         <br>
-        <p>Nuestros graduados pueden exhibir una gran variedad de habilidades tecnicas en el area de belleza, instalacion y mantenimiento de uñas acrilicas lo cual lo coloca en una posicion extrategica de producir bienes y servicios</p>
+        <p>Nuestros graduados pueden exhibir una gran variedad de habilidades tecnicas en el area de belleza, instalacion y mantenimiento de uñas acrilicas lo cual los coloca en una posicion extrategica de producir bienes y servicios</p>
       </div>
-      <div class="col-md-4 col-md-pull-9">
+      <div class="col-md-4 col-md-pull-8">
         <%= image_tag("graduacion/img628.jpg", class:"img-responsive center-block")%>
       </div>
     </div>
@@ -88,7 +86,7 @@
       <div class="col-md-8">
         <h3 class="featurette-heading">Graduacion de Salon, uñas y belleza</h3>
         <br>
-        <p class="lead">El área de las uñas abarca desde los clásicos esmaltados como francés y ejecutivo hasta un servicio integral de manicura o pedicura con decoraciones avanzadas. El especialista en uñas, manos y pies es capaz de mejorar la apariencia de sus clientes a través de servicios adicionales como uñas artificiales y tratamientos específicos para cada problema. </p>
+        <p class="lead">El área de las uñas abarca desde los clásicos esmaltados como francés y ejecutivo hasta un servicio integral de manicure o pedicure con decoraciones avanzadas. El especialista en uñas, manos y pies es capaz de mejorar la apariencia de sus clientes a través de servicios adicionales como uñas artificiales y tratamientos específicos para cada situacion. </p>
       </div>
       <div class="col-md-4">
         <%= image_tag("graduacion/IMG_3510.JPG", class:"img-responsive center-block")%>
@@ -111,7 +109,7 @@
       <div class="col-md-8">
         <h2 class="featurette-heading">Estilista Profesional</h2>
         <br>
-        <p class="lead">El trabajo en una peluquería puede ir desde un sencillo lavado de cabeza a un corte de Cabello moderno no exento de dificultad. Entre estos dos extremos, todo un abanico de técnicas, nuevas o tradicionales, exigen del profesional de peluquería un aprendizaje teórico-tecnológico y práctico que le permita acomodarse continuamente a las nuevas tendencias que marca la moda.El curso está indicado para aquellas personas que quieran tener una profesión estable, trabajando en su propio negocio o en salones de belleza, estudios fotográficos, cine, TV, etc. Este curso profesional tiene una duración de 24 meses asistiendo dos veces por semana o una vez todo el día. Estos meses se dividen en doce materias con una duración cada uno de 2 meses, las cuales son:</p>
+        <p class="lead">El trabajo en una peluquería puede ir desde un sencillo lavado de cabeza a un corte de Cabello moderno no exento de dificultad. Entre estos dos extremos, todo un abanico de técnicas, nuevas o tradicionales, exigen del profesional de peluquería un aprendizaje teórico-tecnológico y práctico que le permita acomodarse continuamente a las nuevas tendencias que marca la moda.El curso está indicado para aquellas personas que quieran tener una profesión estable, trabajando en su propio negocio o en salones de belleza, estudios fotográficos, cine, TV, etc. Este curso profesional tiene una duración de 24 meses asistiendo dos veces por semana o una vez todo el día. Estos meses se dividen en doce materias con una duración cada uno de 2 meses</p>
       </div>
       <div class="col-md-4">
         <%= image_tag("graduacion/pincho", class:"img-responsive center-block")%>
