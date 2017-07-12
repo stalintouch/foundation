@@ -15,22 +15,22 @@
       </ol>
       <div class="carousel-inner " role="listbox">
         <div class="item active ">
-          <%= image_tag('reparticion/refresco.jpg', class:'pelucas') %>
+          <%= image_tag('reparticion/altagracia.jpg', class:'pelucas') %>
           <div class="container">
             <div class="carousel-caption">
               <h1>Fundacion Jacinto Vasquez</h1>
               <p>Los ninos son el futuro del mundo, Apoyandolos tendremos mejor Mañana</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestros projectos</a></p>
+              <%= link_to "Visita Nuestros Projectos", welcomes_futureprojects_path, class: "btn btn-lg btn-primary" %>
             </div>
           </div>
         </div>
         <div class="item">
-          <%= image_tag('reparticion/altagracia.jpg', class:'img-responsive') %>
+          <%= image_tag('reparticion/refresco.jpg', class:'img-responsive') %>
           <div class="container">
             <div class="carousel-caption">
               <h1>Dar es lo que abre la puerta para recibir.</h1>
               <p>La felicidad no consiste en poseer sino en dar y yo me siento feliz cuando puedo brindar a mi hermano una ayuda solidaria. <span><i>---Jacinto Vasquez</i></span></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestras graduaciones</a></p>
+              <%= link_to "Visita Nuestra Area de Graduaciones", welcomes_graduations_path, class: "btn btn-lg btn-primary" %>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
             <div class="carousel-caption">
               <h2>Y vino una viuda pobre y echó dos blancas, que son un cuadrante.</h2>
               <p>Entonces, llamando a sus discípulos, les dijo: De cierto os digo que esta viuda pobre echó más que todos los que han echado al arca, porque todos han echado de lo que les sobra; pero esta, de su pobreza echó todo lo que tenía, todo su sustento. <span><i>Marcos 12:41–44</i></span></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Visita nuestra area de Conferencias</a></p>
+              <%= link_to "Visita nuestra area de Conferencias", welcomes_conferences_path, class: "btn btn-lg btn-primary" %>
             </div>
           </div>
         </div>
